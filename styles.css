@@ -1,0 +1,124 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #111111; 
+    color: #E7ECEF; 
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px 0 20px;
+    flex: 1;
+}
+
+header {
+    background-color: #111111;
+    color: #E7ECEF;
+    text-align: center;
+    padding: 10px 40px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    text-align: left;
+}
+
+.brand h1 {
+    margin: 0;
+}
+
+.welcome {
+    font-family: 'Roboto Mono', monospace;
+    color: #70b7fd;
+    font-size: 5em;
+}
+
+.projects {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2em;
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+}
+
+.social-icons {
+    font-size: 30px;
+}
+
+.social-icons a {
+    color: #E7ECEF;
+    margin-right: 4vh;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #70b7fd; 
+}
+
+.split-view {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-view,
+.right-view {
+    flex: 1;
+    padding: 30px;
+}
+
+.left-view h2,
+.right-view h2 {
+    color: #E7ECEF; 
+}
+
+.left-view p {
+    font-size: 1.2em;
+}
+
+.project {
+    display: block; 
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #222222, #111111);
+    text-decoration: none; 
+    color: #E7ECEF;
+}
+
+.project:hover {
+    background: linear-gradient(45deg, #70b7fd, #111111);
+    color: #E7ECEF;
+}
+
+.project h3 {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+.tags {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #c7c7c7;
+}
+
+footer {
+    background-color: #111111;
+    color: #3a3a3a;
+    text-align: right;
+    padding: 10px 30px;
+}
+
