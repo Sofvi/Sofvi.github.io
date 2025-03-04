@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Laitinen Portfolio</title>
+    <title>Suvi Laitinen | Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap"
       rel="stylesheet"
     />
     <script
@@ -19,76 +19,114 @@
 
   <body>
     <header>
-      <div class="container">
-        <div class="header-content">
-          <div class="brand">
-          </div>
-          <div class="social-icons">
-            <a href="https://github.com/Sofvi" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/suvi-s-laitinen"
-              target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a
-              href="mailto:laitinen.suvi99@gmail.com"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
-          </div>
+      <div class="container header-container">
+        <div class="brand">
+          <h1>Suvi Laitinen</h1>
+          <p class="subheading">ICT Engineering | Mobile & Web Development</p>
+        </div>
+        <div class="social-icons">
+          <a href="https://github.com/Sofvi" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/suvi-s-laitinen" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="mailto:laitinen.suvi99@gmail.com"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
         </div>
       </div>
     </header>
-    <div class="container">
-      <div class="split-view">
-        <div class="left-view">
-          <section id="about">
-            <h1 class="welcome">Welcome.</h1>
+
+    <main>
+      <section class="intro">
+        <h2 class="section-title">Hello, I'm Suvi</h2>
+        <p class="intro-text">
+          I'm a passionate developer with a love for creating intuitive,
+          user-friendly experiences. Based in Espoo, Finland, my focus is on
+          Mobile and Web Development, and I am always excited to learn and grow
+          in the tech world.
+        </p>
+      </section>
+
+      <section class="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-cards">
+          <div class="project-card">
+            <h3>AI-Blaze</h3>
             <p>
-              I'm Suvi Laitinen, a fourth-year ICT engineering student located in
-              Espoo, Finland. My academic focus lies in Mobile Solutions, so I
-              have a profound interest in both mobile and web development.
+              Transforms hand-drawn wireframes into editable HTML and CSS code.
             </p>
-            <br />
+            <div class="badge-link-container">
+              <div class="badge-container">
+                <div class="tech-badge">JavaScript</div>
+                <div class="tech-badge">React</div>
+              </div>
+              <a href="https://github.com/EmilSuuronen/AI-Blaze" class="button"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>FridgeMate</h3>
             <p>
-              Driven by a genuine passion for creating seamless and
-              user-friendly interfaces, I find joy in the balance of technology
-              and design.
+              Helps manage your fridge, create shopping lists, and explore new
+              recipes.
             </p>
-          </section>
+            <div class="badge-link-container">
+              <div class="badge-container">
+                <div class="tech-badge">Kotlin</div>
+              </div>
+              <a href="https://github.com/Emtrixx/RecipeApp" class="button"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>OnlyVegan</h3>
+            <p>
+              A social media app for foodies with diet restrictions in mind.
+            </p>
+            <div class="badge-link-container">
+              <div class="badge-container">
+                <div class="tech-badge">JavaScript</div>
+                <div class="tech-badge">React Native</div>
+              </div>
+              <a href="https://github.com/Sofvi/OnlyVegan" class="button"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>TravelShare</h3>
+            <p>
+              A social media application where users can share pictures from
+              their travels.
+            </p>
+            <div class="badge-link-container">
+              <div class="badge-container">
+                <div class="tech-badge">JavaScript</div>
+                <div class="tech-badge">NodeJS</div>
+              </div>
+              <a href="https://github.com/Sofvi/MediaApp" class="button"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>Brainy Bear</h3>
+            <p>An iOS application for children.</p>
+            <div class="badge-link-container">
+              <div class="badge-container">
+                <div class="tech-badge">Swift</div>
+              </div>
+              <a href="https://github.com/Liideli/BrainyBear" class="button"
+                >View Project</a
+              >
+            </div>
+          </div>
         </div>
-        <div class="right-view">
-            <section id="projects">
-                <h2 class="projects">Projects</h2>
-                <a href="https://github.com/EmilSuuronen/AI-Blaze" class="project">
-                    <h3>AI-Blaze</h3>
-                    <p>Transforms hand-drawn wireframes into editable HTML and CSS code</p>
-                    <div class="tags">JavaScript React</div>
-                </a>
-                <a href="https://github.com/Emtrixx/RecipeApp" class="project">
-                    <h3>FridgeMate</h3>
-                    <p>Helps the user manage their fridge, create shopping lists and explore new recipes with AI</p>
-                    <div class="tags">Kotlin</div>
-                </a>
-                <a href="https://github.com/Sofvi/MediaApp" class="project">
-                    <h3>TravelShare</h3>
-                    <p>An social media application where users can share pictures from their travels</p>
-                    <div class="tags">JavaScript NodeJS</div>
-                </a>
-                <a href="https://github.com/Liideli/BrainyBear" class="project">
-                    <h3>Brainy Bear</h3>
-                    <p>An iOS application for children</p>
-                    <div class="tags">Swift</div>
-                </a>
-            </section>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="footer-container">
-        <p>&copy; 2024 Suvi Laitinen</p>
-      </div>
-    </footer>
+      </section>
+    </main>
   </body>
 </html>

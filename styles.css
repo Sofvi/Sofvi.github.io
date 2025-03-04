@@ -1,124 +1,158 @@
-html, body {
-    height: 100%;
-    margin: 0;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  background-color: #fff9ee; 
+  color: #626267;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #111111; 
-    color: #E7ECEF; 
-}
-
-.container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 10px 20px 0 20px;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
-    background-color: #111111;
-    color: #E7ECEF;
-    text-align: center;
-    padding: 10px 40px;
+  background-color: #fdf5e6; 
+  padding: 40px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.brand {
-    text-align: left;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .brand h1 {
-    margin: 0;
+  font-family: "Playfair Display", serif;
+  color: #ff6f61; 
+  font-size: 2.5em;
+  margin-bottom: 5px;
 }
 
-.welcome {
-    font-family: 'Roboto Mono', monospace;
-    color: #70b7fd;
-    font-size: 5em;
-}
-
-.projects {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 2em;
-}
-
-p {
-    font-family: 'Roboto Slab', serif;
+.subheading {
+  font-size: 1.1em;
+  color: #626267;
 }
 
 .social-icons {
-    font-size: 30px;
+  font-size: 1.5em;
 }
 
 .social-icons a {
-    color: #E7ECEF;
-    margin-right: 4vh;
-    text-decoration: none;
+  color: #ff6f61;
+  margin: 0 15px;
+  text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: #70b7fd; 
+  color: #f39c12; 
 }
 
-.split-view {
-    display: flex;
-    flex-wrap: wrap;
+main {
+  flex: 1;
+  padding: 40px 20px;
 }
 
-.left-view,
-.right-view {
-    flex: 1;
-    padding: 30px;
+.intro {
+  margin-bottom: 40px;
 }
 
-.left-view h2,
-.right-view h2 {
-    color: #E7ECEF; 
+.section-title {
+  font-size: 2.5em;
+  font-family: "Playfair Display", serif;
+  color: #626267;
+  margin-bottom: 15px;
 }
 
-.left-view p {
-    font-size: 1.2em;
+.intro-text {
+  font-size: 1.2em;
+  color: #626267; 
 }
 
-.project {
-    display: block; 
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 15px;
-    background: linear-gradient(45deg, #222222, #111111);
-    text-decoration: none; 
-    color: #E7ECEF;
+.projects {
+  margin-top: 60px;
 }
 
-.project:hover {
-    background: linear-gradient(45deg, #70b7fd, #111111);
-    color: #E7ECEF;
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
 }
 
-.project h3 {
-    margin: 0;
-    font-family: 'Roboto Slab', serif;
+.project-card {
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.tags {
-    margin-top: 5px;
-    font-size: 0.9em;
-    color: #c7c7c7;
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
 }
 
-footer {
-    background-color: #111111;
-    color: #3a3a3a;
-    text-align: right;
-    padding: 10px 30px;
+.project-card h3 {
+  font-size: 1.8em;
+  color: #ff6f61;
+  margin-bottom: 10px;
 }
 
+.project-card p {
+  color: #626267;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.badge-link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+}
+
+.badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tech-badge {
+  display: inline-block;
+  background-color: #f39c12;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #ff6f61; 
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #f39c12; 
+}
